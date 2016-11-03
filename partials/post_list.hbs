@@ -17,17 +17,12 @@
           <time class="excerpt-date-phone" datetime="{{date format='YYYY-MM-DD'}}">
             {{date format="YYYY MMM DD"}}
           </time>
-          <div class="time-to-read">
-            <div class="content-string">
-              {{excerpt words="50000"}}
-            </div>
-          </div>
         </a>
         <a class="excerpt-title" href="{{url}}">
           <h2>{{title}}</h2>
         </a>
         <a class="excerpt-description" href="{{url}}">
-          {{excerpt words="50"}}
+          {{excerpt words="100"}}...
         </a>
         {{#if tags}}
         <div class="top-tags">
