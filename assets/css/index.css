@@ -3,12 +3,6 @@
     src: url(/content/libel-suit-rg.ttf);
 }
 
-@font-face {
-    font-family: 'Magnolia Script';
-    src: url(/content/magnolia-script.otf);
-}
-
-
 /**
   VARIABLES
 **/
@@ -70,7 +64,7 @@ h3 {
       -ms-flex-direction: column;
           flex-direction: column; }
   .blog-title-background h1 {
-    font-family: 'Magnolia Script', 'Libel Suit', Impact, Charcoal, sans-serif;
+    font-family: 'Libel Suit', Impact, Charcoal, sans-serif;
     padding: 0.7em 0.2em;
     background-color: inherit;
     margin-bottom: 0.2em;
