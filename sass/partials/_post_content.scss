@@ -24,6 +24,7 @@
 
   p {
     padding: $small-padding 0;
+    font-size: $scale-size;   
   }
 
   a {
@@ -62,7 +63,8 @@
   }
 
   code {
-    color: $tertiary-colour;
+    /*color: $tertiary-colour; */
+    /*background: $code-background-colour;*/
     text-align: center;
     padding: $small-padding;
   }

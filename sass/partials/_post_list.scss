@@ -113,6 +113,7 @@
 
 
   .excerpt-title {
+    font-size: 110%;
     display: flex;
     align-items: center;
 
@@ -131,6 +132,8 @@
   }
 
   .excerpt-description {
+    font-size: 120%;
+    
     @include mq-phone {
       display: none;
     };
