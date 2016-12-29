@@ -199,6 +199,10 @@ h3 {
     margin: 1em 0;
     padding-left: 0.2em;
     border-left: 0.2em solid #f36b61; }
+  .content-wrapper aside {
+    margin: 1em 0;
+    padding-left: 0.2em;
+    border-left: 0.2em solid #4ba2ec; }
   .content-wrapper img {
     width: 100%;
     height: 100%;

@@ -39,6 +39,12 @@
     padding-left: $small-padding;
     border-left: $small-padding solid $tertiary-colour;
   }
+  
+  aside {
+    margin: 1em 0;
+    padding-left: $small-padding;
+    border-left: $small-padding solid $aside-colour;
+  }
 
   img {
     width: 100%;
