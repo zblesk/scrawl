@@ -4,48 +4,45 @@
   max-width: 850px;
   align-self: center;
   width: 100%;
-
-    @include mq-phone {
-      padding: $small-padding $medium-padding;
-    };
-
-    @include mq-tablet {
-      padding: $small-padding $reading-column-padding;
-    };
-
-    @include mq-desktop {
-      padding: $small-padding 0;
-    };
-
-  h1, h2, h3, h4 {
+  @include mq-phone {
+    padding: $small-padding $medium-padding;
+  }
+  ;
+  @include mq-tablet {
+    padding: $small-padding $reading-column-padding;
+  }
+  ;
+  @include mq-desktop {
+    padding: $small-padding 0;
+  }
+  ;
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     color: $secondary-colour;
   }
-
   p {
     padding: $small-padding 0;
-    font-size: $scale-size;   
+    font-size: $scale-size;
   }
-
   a {
     text-decoration: underline;
     border-bottom: 1px solid $primary-colour;
     text-decoration: none;
     color: $primary-colour
   }
-
   blockquote {
     margin: 1em 0;
     padding-left: $small-padding;
     border-left: $small-padding solid $tertiary-colour;
   }
-  
   aside {
     margin: 1em 0;
     padding-left: $small-padding;
     border-left: $small-padding solid $aside-colour;
   }
-
   img {
     margin: $medium-padding 0;
     max-width: 100%;
@@ -53,37 +50,29 @@
     margin-left: auto;
     margin-right: auto;
   }
-
-    ul li {
-      list-style-type: circle;
-    }
-
-    ol li {
-      list-style-type: decimal;
-    }
-
+  ul li {
+    list-style-type: circle;
+  }
+  ol li {
+    list-style-type: decimal;
+  }
   mark {
     background-color: $primary-colour;
   }
-
   del {
     color: $primary-colour;
   }
-
   hr {
-    border-top:2px solid $tertiary-colour;
+    border-top: 2px solid $tertiary-colour;
   }
-
   code {
     text-align: center;
     padding: $small-padding;
   }
-
   pre {
     code {
       border: none;
       font-size: 1em;
     }
   }
-
 }

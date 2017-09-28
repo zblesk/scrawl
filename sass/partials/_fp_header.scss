@@ -3,7 +3,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-
   h1 {
     padding: $medium-padding $small-padding;
     background-color: inherit;
@@ -12,19 +11,20 @@
     order: 1;
     @include mq-phone {
       font-size: $biggest-header;
-    };
+    }
+    ;
     @include mq-not-phone {
       font-size: 4em;
-    };
+    }
+    ;
   }
 }
 
-.navigation-container{
+.navigation-container {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
   padding-bottom: $small-padding;
-
   li {
     width: 50%;
     padding: $small-padding;
@@ -33,12 +33,12 @@
     color: $secondary-colour;
     list-style-type: none;
     margin: $small-padding;
-
     @include mq-desktop {
       &:hover {
         color: $primary-colour;
         transition: 0.2s;
       }
-    };
+    }
+    ;
   }
 }

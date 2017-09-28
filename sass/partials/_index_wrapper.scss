@@ -3,29 +3,24 @@
   flex-direction: column;
   align-items: center;
   min-height: 100%;
-
   .header-wrapper {
     order: 1;
     width: 100%;
   }
-
   .index-list-wrapper {
     order: 2;
     width: 100%;
     flex-grow: 1;
     max-width: 1000px;
   }
-
   .pagination-wrapper {
     order: 3;
     width: 100%;
     max-width: 1000px;
   }
-
   .footer-wrapper {
     order: 4;
     width: 100%;
     align-self: flex-end;
   }
-
 }

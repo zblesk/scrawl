@@ -5,18 +5,18 @@
     background-color: inherit;
     text-align: center;
     width: 100%;
-
     @include mq-phone {
       padding: $medium-padding $small-padding;
-    };
-
+    }
+    ;
     @include mq-tablet {
       padding: $medium-padding $reading-column-padding;
-    };
-
+    }
+    ;
     @include mq-desktop {
       padding: $medium-padding 0;
-    };
+    }
+    ;
   }
 }
 
@@ -26,20 +26,20 @@
   margin-right: $medium-padding;
   margin-bottom: $medium-padding;
   background-position: center;
-
   @include mq-phone {
     height: 220px;
-  };
-
+  }
+  ;
   @include mq-tablet {
     height: 300px;
-  };
-
+  }
+  ;
   @include mq-not-phone {
     margin-top: $medium-padding;
-  };
-
+  }
+  ;
   @include mq-desktop {
     height: 450px;
-  };
+  }
+  ;
 }

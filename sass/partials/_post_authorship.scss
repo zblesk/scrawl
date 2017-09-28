@@ -3,7 +3,6 @@
   flex-wrap: nowrap;
   align-items: center;
   padding-bottom: $medium-padding;
-
   .author-pic {
     border-radius: 50%;
     width: 45px;
@@ -12,23 +11,17 @@
     order: 1;
     margin-right: $medium-padding;
   }
-
-
   a {
     border: 0px;
   }
-
   .name-date {
     display: flex;
     flex-direction: column;
     order: 2;
-
     .author-name {
       order: 1;
       color: $tertiary-colour;
-
     }
-
     .post-date {
       order: 2;
     }

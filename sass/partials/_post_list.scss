@@ -4,68 +4,68 @@
   padding-bottom: $medium-padding;
   text-align: left;
   color: $secondary-colour;
-
   @include mq-not-desktop {
     padding-left: $medium-padding;
     padding-right: $medium-padding;
-  };
+  }
+  ;
 }
 
 .post-wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-    margin-bottom: $large-padding;
-
-    @include mq-not-desktop {
-      flex-direction: column;
-    };
-
-    @include mq-desktop {
-      flex-direction: row;
-    };
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: $large-padding;
+  @include mq-not-desktop {
+    flex-direction: column;
+  }
+  ;
+  @include mq-desktop {
+    flex-direction: row;
+  }
+  ;
 }
 
 .excerpt-date {
   @include mq-phone {
     display: none;
-  };
-
+  }
+  ;
   @include mq-not-phone {
     text-align: left;
     padding-top: $medium-padding;
     padding-right: $medium-padding;
     display: inline-block;
-  };
-
+  }
+  ;
   @include mq-tablet {
     padding-left: $medium-padding;
-  };
+  }
+  ;
 }
 
 .image-wrapper {
   order: 1;
-
   @include mq-not-desktop {
     width: 100%;
-  };
-
+  }
+  ;
   @include mq-desktop {
     width: 40%;
     margin-right: $large-padding;
-  };
+  }
+  ;
 }
 
 .excerpt-image {
   background-position: center;
-
   @include mq-phone {
     display: none;
-  };
-
+  }
+  ;
   @include mq-tablet {
     width: 100%;
-  };
-
+  }
+  ;
   @include mq-not-phone {
     order: 1;
     height: 250px;
@@ -73,116 +73,110 @@
     margin-right: $medium-padding;
     margin-top: $medium-padding;
     margin-bottom: $medium-padding;
-  };
-
+  }
+  ;
   @include mq-desktop {
     width: 40%;
-  };
+  }
+  ;
 }
 
 .post-excerpt {
   display: flex;
   flex-wrap: wrap;
-
   @include mq-phone {
     width: 100%;
     padding: $medium-padding;
-  };
-
+  }
+  ;
   @include mq-tablet {
     width: 100%;
     flex: 1;
     padding-right: $medium-padding;
     padding-left: $medium-padding;
-  };
-
+  }
+  ;
   @include mq-not-phone {
     flex-direction: row;
     order: 2;
     padding-bottom: $medium-padding;
-  };
-
+  }
+  ;
   @include mq-not-desktop {
     align-items: center;
-  };
-
+  }
+  ;
   @include mq-desktop {
     align-items: flex-start;
     flex: 1;
-  };
-
-
+  }
+  ;
   .excerpt-title {
     font-size: 110%;
     display: flex;
     align-items: center;
-
     @include mq-phone {
       flex: 1;
       order: 2;
-    };
-
+    }
+    ;
     @include mq-not-phone {
       order: 1;
       padding: $small-padding 0;
       width: 100%;
       font-family: 'Libel Suit', Impact, Charcoal, sans-serif;
-    };
-
+    }
+    ;
   }
-
   .excerpt-description {
     font-size: 120%;
-    
     @include mq-phone {
       display: none;
-    };
-
+    }
+    ;
     @include mq-tablet {
       order: 3;
       flex: 1;
-    };
-
+    }
+    ;
     @include mq-desktop {
       order: 2;
       min-width: 100%;
-    };
+    }
+    ;
   }
-
   .date-time {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
     @include mq-phone {
       order: 1;
       margin-right: $medium-padding;
-    };
-
+    }
+    ;
     @include mq-tablet {
       order: 2;
       margin-right: $medium-padding;
-
-    };
-
+    }
+    ;
     @include mq-desktop {
       order: 4;
       align-self: flex-end;
-    };
-
+    }
+    ;
     .excerpt-date-phone {
-
       @include mq-phone {
         width: 100%;
         order: 1;
         padding-bottom: $small-padding;
         text-align: center;
-      };
-
+      }
+      ;
       @include mq-not-phone {
         display: none
-      };
+      }
+      ;
     }
     .time-to-read {
       background-color: inherit;
@@ -196,90 +190,83 @@
       padding: $small-padding;
       width: 90px;
       height: 90px;
-
       @include mq-phone {
         order: 2;
-      };
-
+      }
+      ;
       @include mq-not-phone {
         order: 3;
-      };
-
+      }
+      ;
       h1 {
         color: $tertiary-colour;
         order: 1;
         font-size: $large-header;
       }
-
       div {
         order: 1;
         text-align: center;
       }
-
       .content-string {
         display: none;
       }
     }
   }
-
   .top-tags {
     display: flex;
     flex-wrap: wrap;
     padding-top: $medium-padding;
-
     @include mq-phone {
       order: 3;
       justify-content: flex-start;
-    };
-
+    }
+    ;
     @include mq-tablet {
       order: 4;
       justify-content: flex-end;
-    };
-
+    }
+    ;
     @include mq-not-desktop {
       width: 100%;
-    };
-
+    }
+    ;
     @include mq-desktop {
       order: 3;
       justify-content: flex-start;
       align-self: flex-end;
       flex: 1;
-    };
-
+    }
+    ;
     .tag {
       text-transform: uppercase;
       padding: $small-padding;
       text-align: center;
       color: $secondary-colour;
-
       @include mq-phone {
         margin-right: $medium-padding;
-      };
-
+      }
+      ;
       @include mq-tablet {
         margin-left: $medium-padding;
-      };
-
+      }
+      ;
       @include mq-not-desktop {
         border-bottom: 1px solid $secondary-colour;
         margin-bottom: $small-padding;
-      };
-
+      }
+      ;
       @include mq-desktop {
         margin-right: $medium-padding;
         margin-top: $small-padding;
         border: 1px solid $secondary-colour;
         font-size: 1.1em;
-
-          &:hover {
-            color: $primary-colour;
-            border-color: $primary-colour;
-            transition: 0.2s;
-          }
-      };
-
+        &:hover {
+          color: $primary-colour;
+          border-color: $primary-colour;
+          transition: 0.2s;
+        }
+      }
+      ;
     }
   }
 }

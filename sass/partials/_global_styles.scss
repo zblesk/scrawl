@@ -1,17 +1,20 @@
 @font-face {
-    font-family: 'Libel Suit';
-    src: url(/content/libel-suit-rg.ttf);
+  font-family: 'Libel Suit';
+  src: url(/content/libel-suit-rg.ttf);
 }
+
 
 /**
   VARIABLES
 **/
 
 /* Breakpoints */
+
 $phone-layout-max: 550px;
 $tablet-layout-max: 1000px;
 
 /* Colours */
+
 $primary-colour: #E6AC00;
 $blog-title-background-colour: #FFBF00;
 $secondary-colour: #254E70;
@@ -22,12 +25,14 @@ $code-background-colour: #F5F2F0;
 $aside-colour: #4ba2ec;
 
 /* Padding */
+
 $small-padding: 0.2em;
 $medium-padding: 0.7em;
 $large-padding: 1em;
 $reading-column-padding: 2em;
 
 /* Font sizes */
+
 $biggest-header: 3.5em;
 $large-header: 2.5em;
 $medium-header: 2em;
@@ -35,6 +40,7 @@ $small-header: 1.5em;
 $tiny-text: 0.8em;
 
 /* Scaling */
+
 $scale-size: 130%;
 
 /**
@@ -45,13 +51,13 @@ $scale-size: 130%;
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   border: 0;
   width: 100%;
   height: 100%;
-
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   background-color: $background-colour;
 }
@@ -85,41 +91,37 @@ h3 {
   border: 0;
 }
 
+
 /**
   MIXINS
 **/
 
 @mixin mq-phone {
-  @media screen and (max-width: #{$phone-layout-max})
-  {
+  @media screen and (max-width: #{$phone-layout-max}) {
     @content;
   }
 }
 
 @mixin mq-not-phone {
-  @media screen and (min-width: #{$phone-layout-max+1px})
-  {
+  @media screen and (min-width: #{$phone-layout-max+1px}) {
     @content;
   }
 }
 
 @mixin mq-not-desktop {
-  @media screen and (max-width: #{$tablet-layout-max+1px})
-  {
+  @media screen and (max-width: #{$tablet-layout-max+1px}) {
     @content;
   }
 }
 
 @mixin mq-tablet {
-  @media screen and (min-width: #{$phone-layout-max+1px}) and (max-width: #{$tablet-layout-max})
-  {
+  @media screen and (min-width: #{$phone-layout-max+1px}) and (max-width: #{$tablet-layout-max}) {
     @content;
   }
 }
 
 @mixin mq-desktop {
-  @media screen and (min-width: #{$tablet-layout-max+1px})
-  {
+  @media screen and (min-width: #{$tablet-layout-max+1px}) {
     @content;
   }
 }

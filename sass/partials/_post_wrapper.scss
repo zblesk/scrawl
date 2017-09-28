@@ -1,81 +1,77 @@
 .full-content-wrapper {
   display: flex;
   flex-direction: column;
-
   .header-wrapper {
     order: 1;
     width: 100%;
   }
-
   .title-wrapper {
     width: 100%;
     order: 2;
     max-width: 1000px;
     align-self: center;
-
     @include mq-phone {
       padding: 0 $medium-padding;
-    };
+    }
+    ;
   }
   .commenting-wrapper {
     order: 6;
     max-width: 1000px;
     align-self: center;
     width: 100%;
-
     @include mq-phone {
       padding: $small-padding $medium-padding;
-    };
-
+    }
+    ;
     @include mq-tablet {
       padding: $small-padding $reading-column-padding;
-    };
-
+    }
+    ;
     @include mq-desktop {
       padding: $small-padding 0;
-    };
+    }
+    ;
   }
   .tag-wrapper {
     order: 4;
     width: 100%;
     max-width: 1000px;
     align-self: center;
-
     @include mq-phone {
       padding: $small-padding $medium-padding;
-    };
-
+    }
+    ;
     @include mq-tablet {
       padding: $small-padding $reading-column-padding;
-    };
-
+    }
+    ;
     @include mq-desktop {
       padding: $small-padding 0;
-    };
+    }
+    ;
   }
   .np-wrapper {
     order: 5;
     width: 100%;
     max-width: 1000px;
     align-self: center;
-
     @include mq-phone {
       padding: 0 $medium-padding;
-    };
-
+    }
+    ;
     @include mq-tablet {
       padding: 0 $reading-column-padding;
-    };
-
+    }
+    ;
     @include mq-desktop {
       padding: $small-padding 0;
-    };
+    }
+    ;
   }
-
   .footer-wrapper {
     order: 7;
     width: 100%;
     align-self: flex-end;
   }
-
 }

@@ -3,48 +3,43 @@
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-
   @include mq-phone {
     padding-bottom: $medium-padding;
     padding-left: $medium-padding;
     padding-right: $medium-padding;
-  };
-
+  }
+  ;
   @include mq-tablet {
     padding: $small-padding $medium-padding;
-  };
-
+  }
+  ;
   @include mq-desktop {
     padding: $medium-padding 0;
-  };
-
+  }
+  ;
   .wrapper {
     width: 50%;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-
     a {
       width: 100%;
       color: $tertiary-colour;
       text-transform: uppercase;
       font-size: $small-header;
-
       &.older-posts {
         text-align: left;
       }
-
       &.newer-posts {
         text-align: right;
       }
-
       @include mq-desktop {
         &:hover {
           color: $primary-colour;
           transition: 0.2s;
         }
-      };
+      }
+      ;
     }
   }
-
 }
