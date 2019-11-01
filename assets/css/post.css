@@ -298,6 +298,12 @@ h3 {
 .content-wrapper .kg-embed-card, .content-wrapper figcaption, .content-wrapper .kg-width-wide, .content-wrapper .kg-width-full {
   text-align: center;
 }
+.content-wrapper .kg-width-wide {
+  margin: 0em -8em 0em;
+}
+.content-wrapper .kg-width-full {
+  margin: 0em -50% 0em;
+}
 .content-wrapper .kg-gallery-container, .content-wrapper .kg-gallery-row, .content-wrapper .kg-gallery-image, .content-wrapper .kg-bookmark-card, .content-wrapper .kg-bookmark-container, .content-wrapper .kg-bookmark-content, .content-wrapper .kg-bookmark-title, .content-wrapper .kg-bookmark-description, .content-wrapper .kg-bookmark-metadata, .content-wrapper .kg-bookmark-icon, .content-wrapper .kg-bookmark-author, .content-wrapper .kg-bookmark-publisher, .content-wrapper .kg-bookmark-thumbnail {
   width: 100%;
 }
