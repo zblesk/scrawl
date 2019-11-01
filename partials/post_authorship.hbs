@@ -1,5 +1,5 @@
 <div class="authorship">
-  {{#author}}
+  {{#primary_author}}
     {{#if profile_image}}
       <div class="author-pic" style="background-image:url({{img_url profile_image}})"></div>
     {{/if}}
@@ -7,7 +7,7 @@
       <a class="author-name" url="{{url}}">
         {{name}}
       </a>
-      {{/author}}
+      {{/primary_author}}
       <date class="post-date">
         {{date format="MMM DD YYYY"}}
       </date>

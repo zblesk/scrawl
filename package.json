@@ -1,19 +1,30 @@
 {
   "name":"scrawl",
-  "version":"1.0.3",
-  "author":"Kate Preston <ktweeden@gmail.com>",
-  "contributors": [],
+  "version": "3.0.0",
+  "engines": {
+      "ghost": ">=3.0.0",
+      "ghost-api": "v2"
+  },
+  "author": {
+      "email": "ladislav.benc@protonmail.com",
+      "name": "Ladislav Benc, Kate Preston"
+  },
+  "license": "MIT",
   "repository":{
     "type": "git",
-    "url": "https://github.com/ktweeden/scrawl"
+    "url": "https://github.com/zblesk/scrawl"
   },
   "keywords":[
     "blog",
     "ghost",
-    "theme"
+    "theme",
+    "ghost-theme"
   ],
   "scripts":{
     "watch-css":"sass --watch sass:assets/css",
     "postcss":"postcss -r --use autoprefixer assets/css/index.css && postcss -r --use autoprefixer assets/css/post.css"
+  },
+  "config": {
+      "posts_per_page": 5
   }
 }
